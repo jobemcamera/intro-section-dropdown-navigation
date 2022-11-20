@@ -54,7 +54,13 @@ header {
     display: inline;
 }
 
-.features img, .company img {
+.arrow-down-features {
+    display: none;
+    margin-bottom: 2px;
+}
+
+.arrow-up-features {
+    display: inline;
     margin-bottom: 2px;
 }
 
@@ -81,8 +87,17 @@ header {
     margin-right: 10px;
 }
 
-
 /* Company -------------------------------------------------------- */
+.arrow-down-company {
+    display: none;
+    margin-bottom: 2px;
+}
+
+.arrow-up-company {
+    display: inline;
+    margin-bottom: 2px;
+}
+
 .company-dropdown {
     position: absolute;
     display: none;
