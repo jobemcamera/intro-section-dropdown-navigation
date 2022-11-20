@@ -2,6 +2,7 @@
 
 * {
     font-family: 'Epilogue', sans-serif;
+    background-color: hsl(0, 0%, 98%);
 }
 
 header {
@@ -33,16 +34,78 @@ header {
     font-weight: 500;
     gap: 30px;
     font-family: 'Epilogue', sans-serif;
+    cursor: pointer;
 }
+
+.menu-bar span {
+    font-size: 16px;
+}
+
+.menu-bar a {
+    text-decoration: none;
+    color: hsl(0, 0%, 41%);
+    font-size: 16px;
+}
+
+.features img, .company img {
+    margin-bottom: 2px;
+}
+
+.features-dropdown {
+    position: absolute;
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 20px;
+    width: 120px;
+    z-index: 2;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.features-dropdown a {
+    display: flex;
+    padding: 10px 12px;
+    color: hsl(0, 0%, 41%);
+    align-items: center;
+}
+
+.features-dropdown img {
+    margin-right: 10px;
+}
+
+.company-dropdown {
+    position: absolute;
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 20px;
+    width: 120px;
+    z-index: 2;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.company-dropdown a {
+    display: flex;
+    padding: 10px 12px;
+    color: hsl(0, 0%, 41%);
+    align-items: center;
+}
+
+
+
+
 
 .login-register {
     display: flex;
-    float: right;
+    float: left;
     margin-left: auto;
     font-size: 16px;  
     font-weight: 500;
     gap: 30px;  
     font-family: 'Epilogue', sans-serif;
+}
+
+.login-register a {
+    text-decoration: none;
+    color: hsl(0, 0%, 41%);
 }
 
 .login {
@@ -93,6 +156,7 @@ main {
     border: solid 1px;
     border-radius: 20px;
     padding: 20px 30px;
+    cursor: pointer;
 }
 
 .button-learn-more button:hover {
