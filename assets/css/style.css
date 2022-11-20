@@ -37,14 +37,21 @@ header {
     cursor: pointer;
 }
 
-.menu-bar span {
-    font-size: 16px;
-}
-
 .menu-bar a {
     text-decoration: none;
     color: hsl(0, 0%, 41%);
     font-size: 16px;
+}
+
+.menu-bar a:hover {
+    color: hsl(0, 0%, 8%);
+}
+
+/* Dropdown content ------------------------------------------------ */
+/* Features -------------------------------------------------------- */
+#btn-features {
+    position: relative;
+    display: inline;
 }
 
 .features img, .company img {
@@ -53,11 +60,13 @@ header {
 
 .features-dropdown {
     position: absolute;
+    display: none;
     border-radius: 10px;
     margin-top: 20px;
+    margin-left: -60px;
     padding: 20px;
     width: 120px;
-    z-index: 2;
+    z-index: 1;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
 
@@ -72,8 +81,11 @@ header {
     margin-right: 10px;
 }
 
+
+/* Company -------------------------------------------------------- */
 .company-dropdown {
     position: absolute;
+    display: none;
     border-radius: 10px;
     margin-top: 20px;
     padding: 20px;
@@ -88,10 +100,6 @@ header {
     color: hsl(0, 0%, 41%);
     align-items: center;
 }
-
-
-
-
 
 .login-register {
     display: flex;
@@ -108,6 +116,10 @@ header {
     color: hsl(0, 0%, 41%);
 }
 
+.login-register a:hover {
+    color: hsl(0, 0%, 8%);
+}
+
 .login {
     padding: 12px;
 }
@@ -119,6 +131,7 @@ header {
     font-weight: 500;
 }
 
+/* Main content ------------------------------------------------ */
 main {
     width: 1440px;
     margin: 0 auto;
@@ -146,7 +159,6 @@ main {
     color: hsl(0, 0%, 41%);
 }
 
-
 .button-learn-more button {
     margin-top: 50px;
     font-size: 1.2em;
@@ -157,6 +169,7 @@ main {
     border-radius: 20px;
     padding: 20px 30px;
     cursor: pointer;
+    transition: 0.2s;
 }
 
 .button-learn-more button:hover {
