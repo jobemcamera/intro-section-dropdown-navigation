@@ -116,6 +116,7 @@ header {
     align-items: center;
 }
 
+/* Login e Register buttons ---------------------------------------*/
 .login-register {
     display: flex;
     float: left;
@@ -206,4 +207,92 @@ main {
 
 .img-page img {
   width: 100%
+}
+
+@media screen and (max-width: 375px ) {
+    .header-page {
+        width: 375px;
+    }
+    .logo {
+        margin-left: 15px;
+        margin-top: 15px;
+    }
+    .menu-bar {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        display: grid;
+        gap: 30px;
+    }
+    .login-register {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        display: grid;
+    }
+    main {
+        width: 375px;
+        display: flex;
+        flex-direction: column-reverse;        
+    }
+    .img-page {
+        width: 100%;
+        margin-top: 15px;
+        
+    }
+    .img-page img {
+        content: url(../img/image-hero-mobile.png);  
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .content {
+        display: block;
+        width: 100%;
+        margin-top: 0px;
+        margin-left: 0px;
+     }
+     .main-title {
+        width: 100%;
+        font-size: 2em;
+        text-align: center;
+        margin-top: 30px;
+    }
+    br {
+        display: none;
+    }
+    .main-text {
+        max-width: 100%;
+        width: 80%;
+        text-align: center;
+        justify-content: center;
+        align-content: center;
+        line-height: 25px;
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 0.9em;
+    }
+    .button-learn-more{
+        text-align: center;
+    }
+    .button-learn-more button {
+        margin-top: 20px;
+        font-size: 1.0em;
+        border-radius: 10px;
+        padding: 15px 20px;
+    }
+    .brands {
+        width: 80%;
+        margin-top: 15px;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+    .brands img {
+        display: inline;
+        width: 20%;
+        margin-top: 20px;
+        margin-inline: 5px;
+    }
 }

@@ -13,23 +13,23 @@ const dropDownCompany = document.querySelector('#btn-company');
 dropDownFeatures.addEventListener('click', function() {
     if (featuresContent.style.display == 'block') {
         featuresContent.style.display = 'none';
-        arrowDownFeatures.style.display = 'none';
-        arrowUpFeatures.style.display = 'inline';
-    } else {
-        featuresContent.style.display = 'block';
         arrowUpFeatures.style.display = 'none';
         arrowDownFeatures.style.display = 'inline';
+    } else {
+        featuresContent.style.display = 'block';
+        arrowDownFeatures.style.display = 'none';
+        arrowUpFeatures.style.display = 'inline';
     }
 });
 
 dropDownCompany.addEventListener('click', function() {
     if (companyContent.style.display == 'block') {
         companyContent.style.display = 'none';
-        arrowDownCompany.style.display = 'none';
-        arrowUpCompany.style.display = 'inline';
-    } else {
-        companyContent.style.display = 'block';
         arrowUpCompany.style.display = 'none';
         arrowDownCompany.style.display = 'inline';
+    } else {
+        companyContent.style.display = 'block';
+        arrowDownCompany.style.display = 'none';
+        arrowUpCompany.style.display = 'inline';
     }
 });
