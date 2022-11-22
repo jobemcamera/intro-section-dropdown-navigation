@@ -232,13 +232,13 @@ main {
         top: 15px;    
     }
     .menu-bar {
-        display: flex;
+        display: none;
         width: 200px;
         height: 100vh;
         flex-direction: column;
         position: absolute;
         top: -40px;
-        right: -100%;
+        right: -50px;
         padding-top: 80px;
         padding-left: 20px;
         padding-right: 20px;
@@ -250,9 +250,10 @@ main {
         right: 45px;
     }
     .login-register {
+        display: none;
         position: absolute;
         top: 300px;
-        right: -100%;
+        right: 20px;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -260,10 +261,16 @@ main {
         gap: 10px;
     }
     .menu-bar.active {
+        display: flex;
+        /*
         right: -50px;
+        */
     }
     .login-register.active {
+        display: flex;
+        /*
         right: 20px;
+        */
     }
     .register {
         padding: 10px 60px;
