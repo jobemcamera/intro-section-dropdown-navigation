@@ -27,6 +27,11 @@ header {
     width: 100%;
 }
 
+.open-menu, .close-menu {
+    display: none;
+}
+
+
 .menu-bar {
     display: flex;
     margin: 30px 30px;
@@ -55,12 +60,12 @@ header {
 }
 
 .arrow-down-features {
-    display: none;
+    display: inline;
     margin-bottom: 2px;
 }
 
 .arrow-up-features {
-    display: inline;
+    display: none;
     margin-bottom: 2px;
 }
 
@@ -89,12 +94,12 @@ header {
 
 /* Company -------------------------------------------------------- */
 .arrow-down-company {
-    display: none;
+    display: inline;
     margin-bottom: 2px;
 }
 
 .arrow-up-company {
-    display: inline;
+    display: none;
     margin-bottom: 2px;
 }
 
@@ -212,23 +217,62 @@ main {
 @media screen and (max-width: 375px ) {
     .header-page {
         width: 375px;
+        display: flex;
+        align-items: flex-end;
     }
     .logo {
+        display: inline;
         margin-left: 15px;
         margin-top: 15px;
     }
+    .open-menu {
+        display: flex;
+        position: absolute;
+        right: 15px;
+        top: 15px;    
+    }
     .menu-bar {
-        position: fixed;
-        top: 0;
+        display: flex;
+        width: 200px;
+        height: 100vh;
+        flex-direction: column;
+        position: absolute;
+        top: -40px;
         right: -100%;
-        display: grid;
-        gap: 30px;
+        padding-top: 80px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .close-menu {
+        display: flex;
+        position: absolute;
+        top: 25px;
+        right: 45px;
     }
     .login-register {
-        position: fixed;
-        top: 0;
+        position: absolute;
+        top: 300px;
         right: -100%;
-        display: grid;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+        gap: 10px;
+    }
+    .menu-bar.active {
+        right: -50px;
+    }
+    .login-register.active {
+        right: 20px;
+    }
+    .register {
+        padding: 10px 60px;
+        border-radius: 12px;
+        border: solid 2px;
+    }
+    .features-dropdown {
+        right: 60px;
+        width: 120px;
     }
     main {
         width: 375px;
@@ -238,7 +282,6 @@ main {
     .img-page {
         width: 100%;
         margin-top: 15px;
-        
     }
     .img-page img {
         content: url(../img/image-hero-mobile.png);  
@@ -283,7 +326,7 @@ main {
         padding: 15px 20px;
     }
     .brands {
-        width: 80%;
+        width: 90%;
         margin-top: 15px;
         margin-left: auto;
         margin-right: auto;
@@ -293,6 +336,6 @@ main {
         display: inline;
         width: 20%;
         margin-top: 20px;
-        margin-inline: 5px;
+        margin-inline: 6px;
     }
 }
