@@ -214,9 +214,9 @@ main {
   width: 100%
 }
 
-@media screen and (max-width: 375px ) {
+@media screen and (max-width: 480px ) {
     .header-page {
-        width: 375px;
+        width: 480px;
         display: flex;
         align-items: flex-end;
     }
@@ -282,7 +282,7 @@ main {
         width: 120px;
     }
     main {
-        width: 375px;
+        width: 480px;
         display: flex;
         flex-direction: column-reverse;        
     }
